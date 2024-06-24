@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	background-color: black;
+}
+ul li{
+	list-style: none;
+}
+.navbar-main{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-item-list-dv{
+	display: flex;
+	align-items: center;
+}
+.nav-item-list-dv li a{
+	text-decoration: none !important;
+}
+.nav-item-list-dv li{
+	margin: 0px 20px;
+}
+.nav-item-list-dv .active-nav{
+	color: #fff !important;
+}
+.nav-item{
+	color: #DCDCDC !important;
+}
+.proposal-btn{
+	color: #fff !important;
+	padding: 10px 20px !important;
+	border-radius: 10px !important;
+	font-weight: 500 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
