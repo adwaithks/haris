@@ -19,7 +19,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="btn-nav">
-            <Link className="btn proposal-btn primary-bg" to="/about">GET A PROPOSAL</Link>
+            <Link className="btn proposal-btn primary-bg abra-font" to="/about">GET A PROPOSAL</Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import founder from '../../Assets/founder.svg'
 const Hero = () => {
 	return (
 		<div className='award-winning'>
@@ -7,8 +8,8 @@ const Hero = () => {
 				<h1 className='mb-0 heading-text-hero'>An <span className='primary-color abra-font'>Award-winning</span>  Digital <span className='block-text abra-font'> Marketing Agency in Kerala </span></h1>
 				<p className='mb-0 sub-text-hero'>A digital marketing company that’s on the course of powering up brands <span className='block-text'> with the power of marketing, design and tech. </span></p>
 				<div className="button-dv">
-					<Link className="btn proposal-btn primary-bg " to="/about">GET A PROPOSAL</Link>
-					<Link className="btn proposal-btn" to="/about">CONSULT WITH US</Link>
+					<Link className="btn proposal-btn primary-bg abra-font" to="/about">GET A PROPOSAL</Link>
+					<Link className="btn proposal-btn abra-font" to="/about">Consult With Us</Link>
 				</div>
 				<div className="count-dv">
 					<div className="counts">
@@ -30,7 +31,7 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className="ceo-image">
-
+					<img src={founder} className='founder-img' alt="" />
 			</div>
 		</div>
 	)
