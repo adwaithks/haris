@@ -5,6 +5,13 @@
 	font-family: 'Poppins', sans-serif;
 	background-color: black;
 }
+@font-face {
+	font-family: "abro";
+	src: url(./Fonts/AbroSans-Regular.ttf); 
+}
+.abra-font{
+	font-family: "abro" !important;
+}
 ul li{
 	list-style: none;
 }

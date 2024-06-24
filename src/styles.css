@@ -24,6 +24,7 @@
 }
 .heading-text-hero{
 	color: #fff;
+	font-weight: 500;
 }
 .block-text{
 	display: block;
@@ -32,12 +33,29 @@
 	color: #B2B2B2;
 	padding-bottom: 20px;
 }
-
-
-
-
-
-
+.counts{
+	width: 25%;
+	border-right: 2px solid #b2b2b2ef;
+}
+.count-dv{
+	display: flex;
+}
+.button-dv{
+	padding-bottom: 80px;
+}
+.number-text-sub{
+	color: #fff;
+	font-weight: 300 !important;
+}
+.number-text{
+	font-size: 25px;
+	color: #fff;
+	padding-bottom: 10px;
+	font-weight: 600;
+}
+.left-space{
+	padding-left: 25px;
+}
 
 
 
