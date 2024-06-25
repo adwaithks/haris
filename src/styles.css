@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .container-main{
   width: 75%;
   margin: auto;
@@ -64,14 +66,51 @@
 .award-content , .ceo-image{
 	width: 50%;
 }
-
-
-
-
-
-
-
-
+.hero-home{
+	border-bottom: 1px solid #a7a7a7;
+	height: 95vh;
+}
+/* brands  */
+.brands-section{
+	width: 100%;
+	display: flex;
+  flex-wrap: wrap;
+	padding: 0px 20px;
+	background-color: transparent;
+}
+.brands-section .brand-logo{
+	width: calc(90% / 7); /* Set width based on number of logos */
+  height: auto; /* Maintain aspect ratio */
+  margin: 40px auto 15px auto;
+}
+.brand-dropdown-txt{
+	font-size: 15px;
+	text-align: center;
+	color: #fff;
+	background-color: #151515;
+	border-radius: 0px 0px 20px 20px;
+	padding: 20px 0px;
+	margin-top: 20px;
+}
+.brand-main{
+	border: 1px solid #fff;
+	padding: 20px 0px 0px 0px;
+	width: 100%;
+	margin-top: 50px;
+	border-radius: 30px;
+}
+.dropdown-button{
+	/* background-color: #151515; */
+	border-radius: 0px 0px 30px 30px;
+}
+.view-all{
+	font-weight: 500;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0px !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+}
 
 
 
