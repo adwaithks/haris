@@ -1,6 +1,8 @@
 import React from 'react'
 import Hero from '../Components/HomePage/Hero'
 import Brands from '../Components/HomePage/Brands'
+import About from '../Components/HomePage/About'
+import Frame from '../Components/HomePage/Frame'
 const Home = () => {
   return (
     <div className='home-page'>
@@ -11,6 +13,8 @@ const Home = () => {
       </div>
       <div className="container-main">
         <Brands/>
+        <About/>
+        <Frame/>
       </div>
     </div>
   )

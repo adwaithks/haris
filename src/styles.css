@@ -13,6 +13,9 @@
 .primary-bg{
 	background-color: #7744D5 !important;
 }
+.light-greay-color{
+	color: #B2B2B2;
+}
 .award-winning{
 	width: 100%;
 	display: flex;
@@ -111,20 +114,57 @@
 	color: #fff !important;
 	font-weight: 600 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about-main-section{
+	margin-top: 200px;
+}
+.about-main-heading{
+	color: #fff;
+	font-weight: 600;
+}
+.sub-text-aboutus{
+	color: #B2B2B2;
+	padding-top: 40px;
+}
+.learn-btn{
+	color: #fff !important;
+	margin-top: 30px !important;
+	padding: 9px 20px 7px 20px !important;
+}
+.count-text{
+	color: #fff;
+	font-weight: 600;
+}
+.count-small{
+	font-size: 16px;
+	font-weight: 500;
+}
+.count-block{
+	margin-bottom: 40px;
+}
+.number-count{
+	width: max-content;
+	margin-left: auto;
+}
+.frame-main{
+	width: 100%;
+}
+.frame-section{
+	margin-top: 80px;
+}
+.wall-sub-text{
+	color: #B2B2B2;
+}
+.wall-text{
+	color: #fff;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+.frame-awards{
+	width: 60%;
+}
+.frame-image{
+	width: 40%;
+}
 
 
 
