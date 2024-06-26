@@ -3,7 +3,7 @@ import logo from '../Assets/logo.svg'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
-    <div className='nav-main'>
+    <div className='nav-main black-bg'>
       <div className="container-main">
         <div className="navbar-main">
           <div className="logo-nav">

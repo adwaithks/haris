@@ -5,7 +5,7 @@
   margin: auto;
 }
 .nav-main{
-	margin: 20px 0px;
+	padding: 20px 0px;
 }
 .primary-color{
 	color: #7744D5 !important;
@@ -165,6 +165,165 @@
 .frame-image{
 	width: 40%;
 }
+.automatic-slider{
+	padding-top: 80px;
+}
+/* service section  */
+.services-section{
+	background-image: url(./Assets//grid.svg);
+	width: 100%;
+	background-color: #141414;
+	border-radius: 20px;
+	padding: 40px 40px;	
+	margin-top: 50px;
+}
+.service-heading-text{
+	font-weight: 600;
+	color: #fff;
+	background-color: transparent;
+	padding-bottom: 50px;	
+	padding-top: 30px;
+}
+.service-text{
+	font-size: 19px;
+	padding-bottom: 5px;
+	color: #fff;
+	background-color: transparent !important;
+}
+.service-sub-text{
+	width: 70%;
+	background-color: transparent !important;
+}
+.tab-main{
+	display: flex;
+	padding-bottom: 30px;
+	background-color: transparent !important;
+}
+.service-logo{
+	width: 50px;
+	background-color: transparent !important;
+}
+.tab-div{
+	background-color: transparent;
+}
+.s-dv{
+	background-color: transparent;
+	padding-left: 40px;
+}
+.service-logo-small{
+	width: 25px;
+	background-color: transparent !important;
+}
+.tab-div{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.sub-tab{
+	width: calc(98% / 2);
+	height: auto;
+}
+.sub-tab{
+	background-color: transparent;
+}
+.sub-tab .nav {
+	background-color: transparent !important;
+}
+.sub-tab .nav-item {
+	background-color: transparent !important;
+}
+.sub-tab .nav-pills .nav-link.active{
+	background-color: transparent !important;
+}
+.tab-content .tab-pane {
+	background-color: transparent !important;
+}
+.tab-content{
+	background-color: transparent !important;
+}
+.seo-team-png{
+	background-color: transparent !important;
+}
+/* slider section headline sliders  */
+.white-bgs{
+	background-color: #fff !important;
+	padding: 50px 0px;
+}
+.white-bg{
+	background-color: #fff !important;
+}
+.headline-heading{
+	font-weight: 600;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.sub-head-headline{
+	text-align: center;
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
