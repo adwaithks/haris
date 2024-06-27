@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .container-main{
   width: 75%;
   margin: auto;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .nav-main{
 	padding: 20px 0px;
@@ -248,6 +253,7 @@
 .white-bgs{
 	background-color: #fff !important;
 	padding: 50px 0px;
+	margin-top: 50px;
 }
 .white-bg{
 	background-color: #fff !important;
@@ -261,13 +267,44 @@
 	text-align: center;
 	font-weight: 500;
 }
+.headline-section{
 
-
-
-
-
-
-
+}	
+.divider-space{
+	background-color: black;
+	padding: 50px;
+}
+.consult-section{
+	background-color: #F1C644;
+	padding: 30px 30px;
+	border-radius: 25px;
+	display: flex;
+	width: 100%;
+	margin-top: 100px;
+	background-image: url(./Assets//grid.svg);
+}
+.lets-text{
+	color: #fff;
+	font-size: 60px;
+}
+.consult-btn{
+	padding: 7px 25px 5px 25px !important;
+	color: #fff !important;
+	display: table !important;
+	margin-left: auto;
+	width: max-content;
+	bottom: 0;
+	border-radius: 8px !important;
+	right: 0px;
+	position: absolute;
+}
+.consult-button{
+	width: 50%;
+	position: relative;
+}
+.consult-content{
+	width: 50%;
+}
 
 
 

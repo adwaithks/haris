@@ -5,6 +5,7 @@ import About from '../Components/HomePage/About'
 import Frame from '../Components/HomePage/Frame'
 import Whatwe from '../Components/HomePage/Whatwe'
 import Headlines from '../Components/HomePage/Headlines'
+import Consult from '../Components/HomePage/Consult'
 const Home = () => {
   return (
     <div className="main-wrapper">
@@ -19,11 +20,13 @@ const Home = () => {
         <About/>
         <Frame/>
         <Whatwe/>
+        <div className="black-bg divider-space"></div>
       </div>
     </div>
     <div className="white-bgs">
       <div className="container-main">
         <Headlines/>
+        <Consult/>
       </div>
     </div>
   </div>
