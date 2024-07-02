@@ -32,8 +32,9 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="white-bgs">
+				<Headlines />
+
 				<div className="container-main">
-					<Headlines />
 					<Consult />
 				</div>
 				<CaseStudy />
