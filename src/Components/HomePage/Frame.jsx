@@ -10,7 +10,7 @@ const Frame = () => {
 		<div className="frame-section container-main">
 			<div className="row">
 				<div className="col-lg-12">
-					<div className="frame-main">
+					<div className="frame-main flex items-center justify-between">
 						<div className="frame-awards">
 							<h1 className="mb-0 wall-text abra-font">
 								The Wall of Fame
@@ -88,8 +88,9 @@ const Frame = () => {
 								</Swiper>
 							</div>
 						</div>
-						<div className="frame-image">
+						<div>
 							{/* Your image content here */}
+							<img src="/assets/amna.svg" alt="amna" />
 						</div>
 					</div>
 				</div>
