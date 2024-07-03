@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CallReceivedRoundedIcon from "@mui/icons-material/CallReceivedRounded";
+import CallReceivedIcon from "@mui/icons-material/CallReceived";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,8 +18,8 @@ const SlideComp = ({ url }) => {
 			<div className="relative rounded-xl">
 				<img className="brightness-75 rounded-xl" src={url} alt="img" />
 				{isHovered && (
-					<div className="pointer-events-none opacity-60 absolute top-0 right-0 h-[100%] w-[100%] bg-yellow-300 rounded-xl">
-						<CallReceivedRoundedIcon
+					<div className="pointer-events-none opacity-70 absolute top-0 right-0 h-[100%] w-[100%] bg-yellow-300 rounded-xl">
+						<CallReceivedIcon
 							className="absolute top-5 right-5"
 							style={{
 								color: "white",
@@ -44,7 +44,7 @@ const Headlines = () => {
 	};
 
 	return (
-		<div className="slider-container mx-2">
+		<div className="overflow-x-clip slider-container">
 			<div className="headline-section white-bg mb-12">
 				<h1 className="mb-0 headline-heading abra-font white-bg">
 					Making Headlines
