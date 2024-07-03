@@ -169,7 +169,7 @@ const CaseStudy = () => {
 				>
 					<div className="h-[49%] flex p-2 border-2 rounded-xl shadow-xl">
 						<img
-							alt="shit"
+							alt="loading"
 							className="w-[50%] rounded-xl mr-2"
 							src={currentContent[1].image}
 						/>
@@ -187,7 +187,7 @@ const CaseStudy = () => {
 					</div>
 					<div className="h-[49%] flex p-2 border-2 rounded-xl shadow-xl">
 						<img
-							alt="shit"
+							alt="small img"
 							className="w-[50%] rounded-xl mr-2"
 							src={currentContent[2].image}
 						/>

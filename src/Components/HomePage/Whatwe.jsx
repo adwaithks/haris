@@ -7,6 +7,7 @@ import servicelogofive from "../../Assets/Branding (1) 1.svg";
 import team from "../../Assets/seo_png_1-removebg-preview.png";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
+import AccordionItem from "../custom/AccordionItem";
 const Whatwe = () => {
 	return (
 		<div className="col-lg-12">
@@ -23,131 +24,131 @@ const Whatwe = () => {
 							<Nav variant="pills" className="">
 								<Nav.Item>
 									<Nav.Link eventKey="first">
-										<div
-											className="tab-main"
-											eventKey="first"
+										<AccordionItem
+											title={
+												<div className="flex items-center">
+													<img
+														src={servicelogoone}
+														className="service-logo"
+														alt=""
+													/>
+													<h4 className="ml-5 mb-0 abra-font service-text">
+														SEO
+													</h4>
+												</div>
+											}
 										>
-											<img
-												src={servicelogoone}
-												className="service-logo"
-												alt=""
-											/>
-											<div className="s-dv">
-												<h4 className="mb-0 abra-font service-text">
-													SEO
-												</h4>
-												<p className="mb-0 service-sub-text light-greay-color">
-													To appear on top of Google
-													search results and get more
-													website visitors, leads and
-													revenue.
-												</p>
-											</div>
-										</div>
+											<p className="text-white">
+												To appear on top of Google
+												search results and get more
+												website visitors, leads and
+												revenue.
+											</p>
+										</AccordionItem>
 									</Nav.Link>
 								</Nav.Item>
 
 								<Nav.Item>
 									<Nav.Link eventKey="second">
-										<div
-											className="tab-main"
-											eventKey="second"
+										<AccordionItem
+											title={
+												<div className="flex items-center">
+													<img
+														src={servicelogotwo}
+														className="service-logo-small"
+														alt=""
+													/>
+													<h4 className="ml-5 mb-0 abra-font service-text">
+														Performance Marketing
+													</h4>
+												</div>
+											}
 										>
-											<img
-												src={servicelogotwo}
-												className="service-logo-small"
-												alt=""
-											/>
-											<div className="s-dv">
-												<h4 className="mb-0 abra-font service-text">
-													Performance Marketing
-												</h4>
-												<p className="mb-0 service-sub-text light-greay-color">
-													To appear on top of Google
-													search results and get more
-													website visitors, leads and
-													revenue.
-												</p>
-											</div>
-										</div>
+											<p className="text-white">
+												To appear on top of Google
+												search results and get more
+												website visitors, leads and
+												revenue.
+											</p>
+										</AccordionItem>
 									</Nav.Link>
 								</Nav.Item>
 
 								<Nav.Item>
 									<Nav.Link eventKey="tree">
-										<div
-											className="tab-main"
-											eventKey="three"
+										<AccordionItem
+											title={
+												<div className="flex items-center">
+													<img
+														src={servicelogothree}
+														className="service-logo-small"
+														alt=""
+													/>
+													<h4 className="ml-5 mb-0 abra-font service-text">
+														Social Media
+													</h4>
+												</div>
+											}
 										>
-											<img
-												src={servicelogothree}
-												className="service-logo-small"
-												alt=""
-											/>
-											<div className="s-dv">
-												<h4 className="mb-0 abra-font service-text">
-													Social Media
-												</h4>
-												<p className="mb-0 service-sub-text light-greay-color">
-													To appear on top of Google
-													search results and get more
-													website visitors, leads and
-													revenue.
-												</p>
-											</div>
-										</div>
+											<p className="text-white">
+												To appear on top of Google
+												search results and get more
+												website visitors, leads and
+												revenue.
+											</p>
+										</AccordionItem>
 									</Nav.Link>
 								</Nav.Item>
 
 								<Nav.Item>
 									<Nav.Link eventKey="four">
-										<div
-											className="tab-main"
-											eventKey="four"
+										<AccordionItem
+											title={
+												<div className="flex items-center">
+													<img
+														src={servicelogofour}
+														className="service-logo-small"
+														alt=""
+													/>
+													<h4 className="ml-5 mb-0 abra-font service-text">
+														Web Development
+													</h4>
+												</div>
+											}
 										>
-											<img
-												src={servicelogofour}
-												className="service-logo-small"
-												alt=""
-											/>
-											<div className="s-dv">
-												<h4 className="mb-0 abra-font service-text">
-													Web Development
-												</h4>
-												<p className="mb-0 service-sub-text light-greay-color">
-													To appear on top of Google
-													search results and get more
-													website visitors, leads and
-													revenue.
-												</p>
-											</div>
-										</div>
+											<p className="text-white">
+												To appear on top of Google
+												search results and get more
+												website visitors, leads and
+												revenue.
+											</p>
+										</AccordionItem>
 									</Nav.Link>
 								</Nav.Item>
 
 								<Nav.Item>
 									<Nav.Link eventKey="five">
-										<div
-											className="tab-main"
-											eventKey="five"
+										<AccordionItem
+											title={
+												<div className="flex items-center">
+													<img
+														src={servicelogofive}
+														className="service-logo-small"
+														alt=""
+													/>
+													<h4 className="ml-5 mb-0 abra-font service-text">
+														Branding
+													</h4>
+												</div>
+											}
 										>
-											<img
-												src={servicelogofive}
-												className="service-logo-small"
-												alt=""
-											/>
-											<div className="s-dv">
-												<h4 className="mb-0 abra-font service-text">
-													Branding
-												</h4>
-												<p className="mb-0 service-sub-text light-greay-color">
-													To appear on top of Google
-													search results and get more
-													website visitors, leads and
-													revenue.
-												</p>
-											</div>
-										</div>
+											<p className="text-white">
+												To appear on top of Google
+												search results and get more
+												website visitors, leads and
+												revenue.
+											</p>
+										</AccordionItem>
 									</Nav.Link>
 								</Nav.Item>
 							</Nav>
@@ -164,7 +165,7 @@ const Whatwe = () => {
 								<Tab.Pane eventKey="second">
 									<img
 										src={team}
-										className="seo-team-png"
+										className="seo-png"
 										alt=""
 									/>
 								</Tab.Pane>

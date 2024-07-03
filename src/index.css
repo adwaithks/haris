@@ -2,30 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide.slick-center img {
-	transform: scale(1.5);
-	overflow: hidden;
-	transition: transform 0.3s ease-in-out;
-}
-
 .slick-slide.slick-center {
 	overflow: hidden;
+	position: relative;
+	border-radius: 20px;
+}
+
+.slick-slide:not(.slick-center) {
+	padding: 40px;
+}
+
+.slick-slide.slick-center img {
+	cursor: pointer;
+	transform: scale(1.5);
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
 }
 
 .slick-slide.slick-center img:hover {
 	transform: scale(1.45);
-	transition: transform 0.3s ease-in-out;
-}
-
-.slick-slide img {
-	transform: scale(0.9);
-}
-
-/* Ensure the group-hover effects work as expected */
-.group:hover .group-hover\:scale-145 {
-	transform: scale(1.45);
-}
-
-.group:hover .group-hover\:opacity-100 {
-	opacity: 1;
+	transition: all 0.3s ease-in-out;
 }
