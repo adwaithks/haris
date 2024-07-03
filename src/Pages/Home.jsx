@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Hero from "../Components/HomePage/Hero";
 import Brands from "../Components/HomePage/Brands";
 import About from "../Components/HomePage/About";
@@ -11,11 +11,29 @@ import Chat from "../Components/HomePage/Chat";
 import Map from "../Components/HomePage/Map";
 import Faq from "../Components/HomePage/Faq";
 import CaseStudy from "../Components/HomePage/CaseStudy";
+import Footer from "../Outlets/Footer";
+
+const Section2 = () => {
+	return (
+		<div className="white-bgs relative z-50">
+			<Headlines />
+
+			<div className="container-main">
+				<Consult />
+			</div>
+			<CaseStudy />
+			<Clients />
+			<Chat />
+			<Map />
+			<Faq />
+		</div>
+	);
+};
 
 const Home = () => {
 	return (
-		<div className="main-wrapper">
-			<div className="home-page black-bg">
+		<div className="black-bg  main-wrapper relative">
+			<div className="relative z-30 home-page black-bg">
 				<div className="height-home">
 					<div className="hero-home">
 						<div className="container-main">
@@ -23,26 +41,16 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				<div className="container-main">
+				<div className="">
 					<Brands />
 					<About />
 					<Frame />
 					<Whatwe />
 					<div className="black-bg divider-space"></div>
+					<Section2 />
 				</div>
 			</div>
-			<div className="white-bgs">
-				<Headlines />
-
-				<div className="container-main">
-					<Consult />
-				</div>
-				<CaseStudy />
-				<Clients />
-				<Chat />
-				<Map />
-				<Faq />
-			</div>
+			<Footer />
 		</div>
 	);
 };

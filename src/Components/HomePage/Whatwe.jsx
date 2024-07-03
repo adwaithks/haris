@@ -10,7 +10,7 @@ import Tab from "react-bootstrap/Tab";
 import AccordionItem from "../custom/AccordionItem";
 const Whatwe = () => {
 	return (
-		<div className="col-lg-12">
+		<div className="top-0 sticky z-10 container-main">
 			<div className="services-section">
 				<h1 className="service-heading-text mb-0 abra-font">
 					What We Have for You
