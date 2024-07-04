@@ -120,9 +120,14 @@
 	background-color: transparent;
 	cursor: pointer;
 	padding: 0px !important;
-	color: #fff !important;
+	color: #fff;
 	font-weight: 600 !important;
 }
+
+.view-all:hover {
+	color: #7744d5 !important;
+}
+
 .about-main-section {
 	margin-top: 130px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import servicelogoone from "../../Assets/seo logo 1.svg";
 import servicelogotwo from "../../Assets/Performance 1.svg";
 import servicelogothree from "../../Assets/Social media (1) 1.svg";
@@ -8,7 +8,11 @@ import team from "../../Assets/seo_png_1-removebg-preview.png";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
 import AccordionItem from "../custom/AccordionItem";
+import CallReceivedIcon from "@mui/icons-material/CallReceived";
+
 const Whatwe = () => {
+	const [mouseHover, setMouseHover] = useState(false);
+
 	return (
 		<div className="lg:top-[-300px] lg:sticky lg:z-10 container-main">
 			<div className="services-section">
@@ -158,36 +162,119 @@ const Whatwe = () => {
 						</div>
 						<div className="sub-tab hidden md:block">
 							<Tab.Content>
-								<Tab.Pane eventKey="first">
+								<Tab.Pane eventKey="first" className="relative">
+									{mouseHover && (
+										<div className="absolute right-0 top-0 flex items-center justify-end">
+											<CallReceivedIcon
+												style={{
+													color: "#33bd91",
+													fontSize: 70,
+												}}
+											/>
+										</div>
+									)}
 									<img
+										onMouseEnter={(e) =>
+											setMouseHover(true)
+										}
+										onMouseLeave={(e) =>
+											setMouseHover(false)
+										}
 										src={team}
 										className="seo-team-png"
 										alt=""
 									/>
 								</Tab.Pane>
-								<Tab.Pane eventKey="second">
+								<Tab.Pane
+									eventKey="second"
+									className="relative"
+								>
+									{mouseHover && (
+										<div className="absolute right-0 top-0 flex items-center justify-end">
+											<CallReceivedIcon
+												style={{
+													color: "#33bd91",
+													fontSize: 70,
+												}}
+											/>
+										</div>
+									)}
 									<img
-										src={team}
-										className="seo-png"
-										alt=""
-									/>
-								</Tab.Pane>
-								<Tab.Pane eventKey="tree">
-									<img
+										onMouseEnter={(e) =>
+											setMouseHover(true)
+										}
+										onMouseLeave={(e) =>
+											setMouseHover(false)
+										}
 										src={team}
 										className="seo-team-png"
 										alt=""
 									/>
 								</Tab.Pane>
-								<Tab.Pane eventKey="four">
+								<Tab.Pane className="relative" eventKey="tree">
+									{mouseHover && (
+										<div className="absolute right-0 top-0 flex items-center justify-end">
+											<CallReceivedIcon
+												style={{
+													color: "#33bd91",
+													fontSize: 70,
+												}}
+											/>
+										</div>
+									)}
 									<img
+										onMouseEnter={(e) =>
+											setMouseHover(true)
+										}
+										onMouseLeave={(e) =>
+											setMouseHover(false)
+										}
 										src={team}
 										className="seo-team-png"
 										alt=""
 									/>
 								</Tab.Pane>
-								<Tab.Pane eventKey="five">
+								<Tab.Pane className="relative" eventKey="four">
+									{mouseHover && (
+										<div className="absolute right-0 top-0 flex items-center justify-end">
+											<CallReceivedIcon
+												style={{
+													color: "#33bd91",
+													fontSize: 70,
+												}}
+											/>
+										</div>
+									)}
 									<img
+										onMouseEnter={(e) =>
+											setMouseHover(true)
+										}
+										onMouseLeave={(e) =>
+											setMouseHover(false)
+										}
+										src={team}
+										className="seo-team-png"
+										alt=""
+									/>
+								</Tab.Pane>
+								<Tab.Pane className="relative" eventKey="five">
+									{mouseHover && (
+										<div className="absolute right-0 top-0 flex items-center justify-end">
+											<CallReceivedIcon
+												style={{
+													color: "#33bd91",
+													fontSize: 70,
+												}}
+											/>
+										</div>
+									)}
+									<img
+										onMouseEnter={(e) =>
+											setMouseHover(true)
+										}
+										onMouseLeave={(e) =>
+											setMouseHover(false)
+										}
 										src={team}
 										className="seo-team-png"
 										alt=""

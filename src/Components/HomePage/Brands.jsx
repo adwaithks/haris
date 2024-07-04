@@ -60,7 +60,7 @@ const Brands = () => {
 							Brands that believe in us. Brands that have gone the
 							extra mile with us.{" "}
 							<button
-								className="view-all btn"
+								className="view-all text-white btn"
 								onClick={() => setVisible(!visible)}
 							>
 								View All
