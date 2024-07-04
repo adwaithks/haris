@@ -10,7 +10,7 @@ import Tab from "react-bootstrap/Tab";
 import AccordionItem from "../custom/AccordionItem";
 const Whatwe = () => {
 	return (
-		<div className="top-0 sticky z-10 container-main">
+		<div className="lg:top-[-300px] lg:sticky lg:z-10 container-main">
 			<div className="services-section">
 				<h1 className="service-heading-text mb-0 abra-font">
 					What We Have for You
@@ -127,7 +127,10 @@ const Whatwe = () => {
 								</Nav.Item>
 
 								<Nav.Item>
-									<Nav.Link eventKey="five">
+									<Nav.Link
+										style={{ width: "100%" }}
+										eventKey="five"
+									>
 										<AccordionItem
 											title={
 												<div className="flex items-center">
@@ -153,7 +156,7 @@ const Whatwe = () => {
 								</Nav.Item>
 							</Nav>
 						</div>
-						<div className="sub-tab">
+						<div className="sub-tab hidden md:block">
 							<Tab.Content>
 								<Tab.Pane eventKey="first">
 									<img

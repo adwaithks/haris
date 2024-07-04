@@ -116,12 +116,13 @@ const CaseStudy = () => {
 				</h2>
 			</div>
 			<div
+				className="my-6 overflow-x-auto h-12"
 				style={{
 					display: "flex",
 					alignItems: "center",
 					justifyContent: "space-evenly",
+					whiteSpace: "nowrap",
 				}}
-				className="my-12"
 			>
 				{Object.keys(contents).map((name, index) => {
 					return (
@@ -129,8 +130,9 @@ const CaseStudy = () => {
 							style={{
 								cursor: "pointer",
 								color: currentTab === name ? "black" : "gray",
+								margin: "0 1rem", // Add some margin for spacing
 							}}
-							className="font-semibold text-lg"
+							className="font-semibold text-sm sm:text-lg"
 							onClick={() => setCurrentTab(name)}
 							key={index}
 						>
@@ -140,65 +142,56 @@ const CaseStudy = () => {
 				})}
 			</div>
 
-			<div
-				style={{
-					display: "flex",
-					gap: 10,
-				}}
-				className="h-[500px]"
-			>
-				<div className="w-[50%] flex flex-col p-2 border-2 rounded-xl shadow-xl">
+			<div className="md:h-[550px] flex-col md:flex md:flex-row gap-2">
+				<div className="h-[100%] md:w-[50%] w-[100%] mb-2 md:mb-0 flex flex-col p-2 border-2 rounded-xl shadow-xl">
 					<img
 						alt="test"
 						className="h-[100px] mb-2 w-[100%] flex-1 rounded-xl"
 						src={currentContent[0].image}
 					/>
-					<h1 className="font-semibold text-2xl">
+					<h1 className="font-semibold text-sm lg:text-2xl">
 						{currentContent[0].heading}
 					</h1>
-					<h2 className="text-gray-500 text-lg my-2">
+					<h2 className="text-gray-500 lg:text-lg text-xs my-2">
 						{currentContent[0].date}
 					</h2>
-					<h2 className="text-lg">{currentContent[0].description}</h2>
+					<h2 className="lg:text-lg text-sm">
+						{currentContent[0].description}
+					</h2>
 				</div>
-				<div
-					style={{
-						width: "50%",
-					}}
-					className="flex flex-col justify-between"
-				>
-					<div className="h-[49%] flex p-2 border-2 rounded-xl shadow-xl">
+				<div className="md:w-[50%] flex flex-col h-[100%] justify-between gap-2">
+					<div className="h-[50%] flex p-2 border-2 rounded-xl shadow-xl mb-2 md:mb-0">
 						<img
 							alt="loading"
 							className="w-[50%] rounded-xl mr-2"
 							src={currentContent[1].image}
 						/>
 						<div className="w-[50%]">
-							<h1 className="font-semibold text-2xl">
+							<h1 className="font-semibold  text-sm lg:text-2xl">
 								{currentContent[1].heading}
 							</h1>
-							<h2 className="text-gray-500 my-2 text-lg">
+							<h2 className="text-gray-500 my-2 lg:text-lg text-xs">
 								{currentContent[1].date}
 							</h2>
-							<h2 className="text-lg">
+							<h2 className="lg:text-lg text-sm">
 								{currentContent[1].description}
 							</h2>
 						</div>
 					</div>
-					<div className="h-[49%] flex p-2 border-2 rounded-xl shadow-xl">
+					<div className="h-[50%] flex p-2 border-2 rounded-xl shadow-xl mb-2 md:mb-0">
 						<img
 							alt="small img"
 							className="w-[50%] rounded-xl mr-2"
 							src={currentContent[2].image}
 						/>
 						<div className="w-[50%]">
-							<h1 className="font-semibold text-2xl">
+							<h1 className="font-semibold  text-sm lg:text-2xl">
 								{currentContent[2].heading}
 							</h1>
-							<h2 className="text-gray-500 my-2 text-lg">
+							<h2 className="text-gray-500 my-2 lg:text-lg text-xs">
 								{currentContent[2].date}
 							</h2>
-							<h2 className="text-lg">
+							<h2 className="lg:text-lg text-sm">
 								{currentContent[2].description}
 							</h2>
 						</div>

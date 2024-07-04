@@ -4,7 +4,7 @@ import google from ".././Assets/image 2.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
-		<div className="black-bg sticky bottom-0 z-10 pt-10">
+		<div className="black-bg lg:sticky lg:bottom-0 lg:z-10 pt-10">
 			<div className="container-main">
 				<div className="row">
 					<div className="col-lg-3">

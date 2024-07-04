@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const About = () => {
 	return (
 		<div className="about-main-section container-main">
-			<div className="row">
-				<div className="col-lg-9">
+			<div className="lg:flex lg:flex-row flex-col items-start ">
+				<div className="md:w-[60%] w-[100%]">
 					<div className="about-main">
 						<h1 className="mb-0 about-main-heading abra-font">
 							Here to Help Brands Dream Big,{" "}
@@ -29,8 +29,8 @@ const About = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="col-lg-3">
-					<div className="number-count">
+				<div className="md:w-[40%] w-[100%] flex items-center md:justify-center justify-start md:mt-0 mt-4">
+					<div className="">
 						<div className="count-block">
 							<h1 className="abra-font mb-0 count-text">
 								2020{" "}

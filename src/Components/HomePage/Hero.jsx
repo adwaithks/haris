@@ -5,8 +5,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Hero = () => {
 	return (
-		<div className="award-winning">
-			<div className="award-content">
+		<div className="award-winning ">
+			<div className="md:w-[50%] w-[100%]">
 				<h1 className="mb-0 heading-text-hero">
 					An{" "}
 					<span className="primary-color fw abra-font">
@@ -34,42 +34,50 @@ const Hero = () => {
 						GET A PROPOSAL
 						<ArrowForwardIcon />{" "}
 					</Link>
-					<Link className="btn proposal-btn abra-font" to="/about">
+					<Link
+						className="btn proposal-btn abra-font md:mt-2 mt-3"
+						to="/about"
+					>
 						Consult With Us
 					</Link>
 				</div>
 				<div className="count-dv">
-					<div className="counts">
-						<h4 className="mb-0 number-text abra-font">600M+</h4>
-						<p className="mb-0 number-text-sub abra-font">
+					<div className="w-[25%] md:border-r-2 md:border-r-white">
+						<h4 className="mb-0 number-text abra-font text-xs ">
+							600M+
+						</h4>
+						<p className="mb-0 number-text-sub abra-font  md:text-md text-xs">
 							Revenue{" "}
 							<span className="block-text abra-font">
 								Generated
-							</span>{" "}
+							</span>
 						</p>
 					</div>
-					<div className="counts left-space">
+
+					<div className="w-[25%] left-space md:border-r-2 md:border-r-white">
 						<h4 className="mb-0 number-text abra-font">150+</h4>
-						<p className="mb-0 number-text-sub abra-font">
+						<p className="mb-0 number-text-sub abra-font  md:text-md text-xs">
 							Clients{" "}
 						</p>
 					</div>
-					<div className="counts left-space">
+
+					<div className="w-[25%] left-space md:border-r-2 md:border-r-white">
 						<h4 className="mb-0 number-text abra-font">1000+</h4>
-						<p className="mb-0 number-text-sub abra-font">
+						<p className="mb-0 number-text-sub abra-font  md:text-md text-xs">
 							Projects
 						</p>
 					</div>
-					<div className="countsm left-space">
+
+					<div className="w-[25%] left-space md:border-r-2 md:border-r-white">
 						<h4 className="mb-0 number-text abra-font">05</h4>
-						<p className="mb-0 number-text-sub abra-font">
+						<p className="mb-0 number-text-sub abra-font  md:text-md text-xs">
 							National-level{" "}
 							<span className="block-text abra-font">Awards</span>{" "}
 						</p>
 					</div>
 				</div>
 			</div>
-			<div className="ceo-image">
+			<div className="ceo-image md:block hidden">
 				<img src={founder} className="founder-img" alt="" />
 			</div>
 		</div>

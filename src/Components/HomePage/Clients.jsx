@@ -26,19 +26,25 @@ const reviews = [
 
 const Review = ({ review, isVisible }) => (
 	<div
-		className={` w-[500px] transition-opacity duration-1000 ${
+		className={`w-full max-w-[500px] rounded-2xl bg-black transition-opacity duration-1000 ${
 			isVisible ? "opacity-100" : "opacity-0"
 		} absolute right-0`}
 	>
-		<div className="revew-main">
-			<div className="review-box">
-				<h4 className="reviewr-name mb-0">{review.name}</h4>
+		<div className="review-main">
+			<div className="review-box p-4 rounded shadow-md">
+				<h4 className="text-white reviewer-name mb-0">{review.name}</h4>
 				<p className="review-text mb-0">{review.text}</p>
-				<div className="rev-profile">
-					<img src={user} className="user-img" alt="" />
+				<div className="rev-profile  flex items-center">
+					<img
+						src={user}
+						className="user-img w-12 h-12 rounded-full mr-4"
+						alt=""
+					/>
 					<div className="user-name-dv">
 						<h5 className="mb-0 user-name">{review.userName}</h5>
-						<p className="mb-0 user-des">{review.userDesc}</p>
+						<p className="mb-0 user-desc text-gray-500">
+							{review.userDesc}
+						</p>
 					</div>
 				</div>
 			</div>
@@ -59,21 +65,21 @@ const Clients = () => {
 			}, 1000); // Delay before fade-in
 		};
 
-		const interval = setInterval(changeReview, 2000); // 6 seconds interval (3 seconds delay + 3 seconds display time)
+		const interval = setInterval(changeReview, 2000); // 2 seconds interval (1 second delay + 1 second display time)
 
 		return () => clearInterval(interval);
 	}, []);
 
 	return (
-		<div className="clients-reviews">
-			<div className="container-main">
-				<div className="flex items-center justify-between">
-					<div className="w-[50%]">
+		<div className="clients-reviews py-8">
+			<div className="container mx-auto">
+				<div className="flex flex-col md:flex-row items-center justify-between">
+					<div className="w-full md:w-1/2 mb-8 md:mb-0">
 						<div className="review-main">
-							<h1 className="clients-heading mb-0 abra-font">
+							<h1 className="clients-heading mb-2 abra-font">
 								Client Reviews
 							</h1>
-							<p className="mb-0 clents-sub">
+							<p className="mb-4 clients-sub">
 								Here is what our clients have to say about our
 								service
 							</p>
@@ -81,7 +87,7 @@ const Clients = () => {
 						</div>
 					</div>
 
-					<div className="relative border-2w-[50%] h-[250px]">
+					<div className="relative w-full md:w-1/2 h-[250px]">
 						{reviews.map((review, index) => (
 							<Review
 								key={index}

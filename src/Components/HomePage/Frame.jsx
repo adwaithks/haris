@@ -18,9 +18,9 @@ const Frame = () => {
 							<p className="mb-0 wall-sub-text">
 								Our awards and recognitions
 							</p>
-							<div className="automatic-slider">
+							<div className="mt-4">
 								<Swiper
-									spaceBetween={50} // Optional: Add space between slides (adjust as needed)
+									spaceBetween={10} // Optional: Add space between slides (adjust as needed)
 									slidesPerView={3} // Optional: Control how many slides are visible
 									autoplay={{
 										// Configure autoplay options
@@ -32,58 +32,28 @@ const Frame = () => {
 										<img
 											src={awardone}
 											alt=""
-											className="awrad-img"
+											// className="awrad-img"
 										/>
 									</SwiperSlide>
 									<SwiperSlide>
-										<img
-											src={awardtwo}
-											alt=""
-											className="awrad-img"
-										/>
+										<img src={awardtwo} alt="" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<img
-											src={awardone}
-											alt=""
-											className="awrad-img"
-										/>
+										<img src={awardone} alt="" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<img
-											src={awardtwo}
-											alt=""
-											className="awrad-img"
-										/>
+										<img src={awardtwo} alt="" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<img
-											src={awardone}
-											alt=""
-											className="awrad-img"
-										/>
+										<img src={awardone} alt="" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<img
-											src={awardtwo}
-											alt=""
-											className="awrad-img"
-										/>
+										<img src={awardtwo} alt="" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<img
-											src={awardone}
-											alt=""
-											className="awrad-img"
-										/>
+										<img src={awardone} alt="" />
 									</SwiperSlide>
-									<SwiperSlide>
-										<img
-											src={awardtwo}
-											alt=""
-											className="awrad-img"
-										/>
-									</SwiperSlide>
+
 									{/* Add more slides as needed */}
 								</Swiper>
 							</div>

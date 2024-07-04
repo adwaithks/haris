@@ -23,7 +23,7 @@ const AccordionItem = ({ title, children }) => {
 					transition: "max-height 0.3s ease",
 				}}
 			>
-				<div style={styles.innerContent}>{children}</div>
+				<div className="w-full">{children}</div>
 			</div>
 		</div>
 	);
@@ -33,7 +33,7 @@ const styles = {
 	container: {
 		borderRadius: "5px",
 		marginBottom: "10px",
-		overflow: "hidden",
+		width: "100%",
 	},
 	title: {
 		padding: "10px",
@@ -41,9 +41,7 @@ const styles = {
 	},
 	content: {
 		overflow: "hidden",
-	},
-	innerContent: {
-		padding: "10px",
+		width: "100%",
 	},
 };
 

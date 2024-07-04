@@ -34,11 +34,9 @@ const Home = () => {
 	return (
 		<div className="black-bg  main-wrapper relative">
 			<div className="relative z-30 home-page black-bg">
-				<div className="height-home">
-					<div className="hero-home">
-						<div className="container-main">
-							<Hero />
-						</div>
+				<div className="hero-home">
+					<div className="container-main">
+						<Hero />
 					</div>
 				</div>
 				<div className="">
