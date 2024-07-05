@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Assets/logo.svg";
 import { Link } from "react-router-dom";
 import { ArrowForward } from "@mui/icons-material";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+
 const Navbar = () => {
+	const [mouseOver, setMouseOver] = useState(false);
+
 	return (
 		<div className="nav-main black-bg">
 			<div className="container-main">
@@ -42,12 +46,21 @@ const Navbar = () => {
 							</li>
 						</ul>
 					</div>
-					<div className="btn-nav">
+					<div
+						onMouseOver={() => setMouseOver(true)}
+						onMouseLeave={() => setMouseOver(false)}
+						className="btn-nav"
+					>
 						<Link
 							className="btn proposal-btn primary-bg abra-font"
 							to="/about"
 						>
-							GET A PROPOSAL <ArrowForward />
+							GET A PROPOSAL{" "}
+							{mouseOver ? (
+								<ArrowForward />
+							) : (
+								<ArrowOutwardIcon />
+							)}
 						</Link>
 					</div>
 				</div>

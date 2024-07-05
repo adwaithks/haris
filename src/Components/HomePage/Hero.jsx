@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import founder from "../../Assets/founder.svg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 const Hero = () => {
+	const [mouseOver, setMouseOver] = useState(false);
+
+	const [currentImage, setCurrentImage] = useState(0); // State to track current image index
+
+	const images = ["./assets/founder.svg"];
+
+	useEffect(() => {
+		// Function to change image every 3 seconds
+		const interval = setInterval(() => {
+			setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+		}, 5000); // Change image every 3000 milliseconds (3 seconds)
+
+		return () => clearInterval(interval); // Clean up interval on component unmount
+	}, [images.length]); // Dependency array to ensure interval is set correctly
+
 	return (
 		<div className="award-winning ">
 			<div className="md:w-[50%] w-[100%]">
@@ -28,11 +43,17 @@ const Hero = () => {
 				</p>
 				<div className="button-dv">
 					<Link
+						onMouseOver={() => setMouseOver(true)}
+						onMouseLeave={() => setMouseOver(false)}
 						className="btn proposal-btn primary-bg abra-font"
 						to="/about"
 					>
 						GET A PROPOSAL
-						<ArrowForwardIcon />{" "}
+						{mouseOver ? (
+							<ArrowForwardIcon />
+						) : (
+							<ArrowOutwardIcon />
+						)}
 					</Link>
 					<Link
 						className="btn proposal-btn abra-font md:mt-2 mt-3"
@@ -78,7 +99,11 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className="ceo-image md:block hidden">
-				<img src={founder} className="founder-img" alt="" />
+				<img
+					src={images[currentImage]}
+					className="founder-img"
+					alt=""
+				/>
 			</div>
 		</div>
 	);

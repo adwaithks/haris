@@ -34,11 +34,10 @@ const Home = () => {
 	return (
 		<div className="black-bg  main-wrapper relative">
 			<div className="relative z-30 home-page black-bg">
-				<div className="hero-home">
-					<div className="container-main">
-						<Hero />
-					</div>
+				<div className="container-main">
+					<Hero />
 				</div>
+
 				<div className="">
 					<Brands />
 					<About />

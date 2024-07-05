@@ -1,23 +1,18 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 
-const AccordionItem = ({ title, children }) => {
-	const [isOpen, setIsOpen] = useState(false);
+const AccordionItem = ({ state, onClick, title, children }) => {
 	const contentRef = useRef(null);
-
-	const toggleAccordion = () => {
-		setIsOpen(!isOpen);
-	};
 
 	return (
 		<div style={styles.container}>
-			<div onClick={toggleAccordion} style={styles.title}>
+			<div onClick={onClick} style={styles.title}>
 				{title}
 			</div>
 			<div
 				ref={contentRef}
 				style={{
 					...styles.content,
-					maxHeight: isOpen
+					maxHeight: state
 						? `${contentRef?.current?.scrollHeight}px`
 						: "0px",
 					transition: "max-height 0.3s ease",

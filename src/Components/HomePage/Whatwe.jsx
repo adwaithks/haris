@@ -13,6 +13,14 @@ import CallReceivedIcon from "@mui/icons-material/CallReceived";
 const Whatwe = () => {
 	const [mouseHover, setMouseHover] = useState(false);
 
+	const [accordionStates, setAccordionStates] = useState([
+		false,
+		false,
+		false,
+		false,
+		false,
+	]);
+
 	return (
 		<div className="lg:top-[-300px] lg:sticky lg:z-10 container-main">
 			<div className="services-section">
@@ -29,6 +37,25 @@ const Whatwe = () => {
 								<Nav.Item>
 									<Nav.Link eventKey="first">
 										<AccordionItem
+											state={accordionStates[0] === true}
+											onClick={() => {
+												if (accordionStates[0] === true)
+													setAccordionStates([
+														false,
+														false,
+														false,
+														false,
+														false,
+													]);
+												else
+													setAccordionStates([
+														true,
+														false,
+														false,
+														false,
+														false,
+													]);
+											}}
 											title={
 												<div className="flex items-center">
 													<img
@@ -55,6 +82,25 @@ const Whatwe = () => {
 								<Nav.Item>
 									<Nav.Link eventKey="second">
 										<AccordionItem
+											state={accordionStates[1] === true}
+											onClick={() => {
+												if (accordionStates[1] === true)
+													setAccordionStates([
+														false,
+														false,
+														false,
+														false,
+														false,
+													]);
+												else
+													setAccordionStates([
+														false,
+														true,
+														false,
+														false,
+														false,
+													]);
+											}}
 											title={
 												<div className="flex items-center">
 													<img
@@ -81,6 +127,25 @@ const Whatwe = () => {
 								<Nav.Item>
 									<Nav.Link eventKey="tree">
 										<AccordionItem
+											state={accordionStates[2] === true}
+											onClick={() => {
+												if (accordionStates[2] === true)
+													setAccordionStates([
+														false,
+														false,
+														false,
+														false,
+														false,
+													]);
+												else
+													setAccordionStates([
+														false,
+														false,
+														true,
+														false,
+														false,
+													]);
+											}}
 											title={
 												<div className="flex items-center">
 													<img
@@ -107,6 +172,25 @@ const Whatwe = () => {
 								<Nav.Item>
 									<Nav.Link eventKey="four">
 										<AccordionItem
+											state={accordionStates[3] === true}
+											onClick={() => {
+												if (accordionStates[3] === true)
+													setAccordionStates([
+														false,
+														false,
+														false,
+														false,
+														false,
+													]);
+												else
+													setAccordionStates([
+														false,
+														false,
+														false,
+														true,
+														false,
+													]);
+											}}
 											title={
 												<div className="flex items-center">
 													<img
@@ -136,6 +220,25 @@ const Whatwe = () => {
 										eventKey="five"
 									>
 										<AccordionItem
+											state={accordionStates[4] === true}
+											onClick={() => {
+												if (accordionStates[4] === true)
+													setAccordionStates([
+														false,
+														false,
+														false,
+														false,
+														false,
+													]);
+												else
+													setAccordionStates([
+														false,
+														false,
+														false,
+														false,
+														true,
+													]);
+											}}
 											title={
 												<div className="flex items-center">
 													<img

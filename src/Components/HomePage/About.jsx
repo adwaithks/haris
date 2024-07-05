@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CountUp from "../custom/CountUp";
+
 const About = () => {
 	return (
 		<div className="about-main-section container-main">
@@ -32,7 +34,7 @@ const About = () => {
 				<div className="md:w-[40%] w-[100%] flex items-center md:justify-center justify-start md:mt-0 mt-4">
 					<div className="">
 						<div className="count-block">
-							<h1 className="abra-font mb-0 count-text">
+							<h1 className="flex flex-col abra-font mb-0 count-text">
 								2020{" "}
 								<span className="block-text abra-font count-small">
 									Established Year
@@ -40,20 +42,20 @@ const About = () => {
 							</h1>
 						</div>
 						<div className="count-block">
-							<h1 className="abra-font mb-0 count-text">
-								100+{" "}
-								<span className="block-text abra-font count-small">
-									Employees
-								</span>
+							<h1 className="flex abra-font mb-0 count-text">
+								<CountUp duration={1000} target={100} />+{" "}
 							</h1>
+							<span className="count-text block-text abra-font count-small">
+								Employees
+							</span>
 						</div>
 						<div className="count-block">
-							<h1 className="abra-font mb-0 count-text">
-								08+{" "}
-								<span className="block-text abra-font count-small">
-									Departments
-								</span>
+							<h1 className=" flex abra-font mb-0 count-text">
+								<CountUp duration={1000} target={8} />+
 							</h1>
+							<span className="count-text block-text abra-font count-small">
+								Departments
+							</span>
 						</div>
 					</div>
 				</div>

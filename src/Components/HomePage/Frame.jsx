@@ -20,6 +20,15 @@ const Frame = () => {
 							</p>
 							<div className="mt-4">
 								<Swiper
+									centeredSlides
+									effect="coverflow"
+									coverflowEffect={{
+										rotate: 0,
+										stretch: 0,
+										depth: 100,
+										modifier: 1,
+										slideShadows: false,
+									}}
 									spaceBetween={10} // Optional: Add space between slides (adjust as needed)
 									slidesPerView={3} // Optional: Control how many slides are visible
 									autoplay={{
@@ -27,13 +36,10 @@ const Frame = () => {
 										delay: 1000, // Delay between transitions (in milliseconds)
 										disableOnInteraction: false, // Allow user interaction to pause autoplay (optional)
 									}}
+									initialSlide={1}
 								>
 									<SwiperSlide>
-										<img
-											src={awardone}
-											alt=""
-											// className="awrad-img"
-										/>
+										<img src={awardone} alt="" />
 									</SwiperSlide>
 									<SwiperSlide>
 										<img src={awardtwo} alt="" />

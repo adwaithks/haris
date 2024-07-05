@@ -116,7 +116,7 @@ const CaseStudy = () => {
 				</h2>
 			</div>
 			<div
-				className="my-6 overflow-x-auto h-12"
+				className="my-6 overflow-x-scroll h-12"
 				style={{
 					display: "flex",
 					alignItems: "center",
