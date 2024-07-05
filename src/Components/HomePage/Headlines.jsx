@@ -38,9 +38,17 @@ const Headlines = () => {
 		className: "center",
 		centerMode: true,
 		infinite: true,
-		centerPadding: 0,
-		slidesToShow: 3,
+		centerPadding: "30%",
+		slidesToShow: 1,
 		speed: 500,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					centerPadding: "15%", // Adjust this for smaller screens
+				},
+			},
+		],
 	};
 
 	return (
